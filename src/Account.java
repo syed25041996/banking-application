@@ -3,6 +3,8 @@ public class Account {
     private String name;
     private String id;
 
+    private double money;
+
     public Account() {
     }
 
@@ -12,6 +14,12 @@ public class Account {
         System.out.println("Thank you "+ name +" for creating an account with us");
         System.out.println("Your id is " + id);
         System.out.println("Please go to the login section");
+    }
+
+    public Account(String name, String id, double money) {
+        this.name = name;
+        this.id = id;
+        this.money = money;
     }
 
     public String getName() {
@@ -28,6 +36,14 @@ public class Account {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public double getMoney() {
+        return money;
+    }
+
+    public void setMoney(double money) {
+        this.money = money;
     }
 
     @Override
